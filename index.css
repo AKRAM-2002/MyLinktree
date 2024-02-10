@@ -39,6 +39,7 @@ p {
     background-color: hsl(0, 0%, 12%);
     border-radius: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 a{
