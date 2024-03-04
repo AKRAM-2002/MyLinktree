@@ -12,11 +12,9 @@ body {
     background: linear-gradient(45deg, hsl(0, 0%, 8%), hsl(216, 94%, 57%));
     color: white;
     margin: 0;
-    padding: 0;
-    max-width: 1440px;
-    margin: 10px auto;
-    box-sizing: border-box;
+    padding: 10px;
     overflow: hidden;
+    height: fit-content;
 }
 
 p {
@@ -31,6 +29,7 @@ p {
 
 .container {
     width: 400px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,18 +52,13 @@ a{
     align-items: center;
 }
 
-
-
-
 .social-links{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    
+    width: 85%;
 }
-
 
 ul {
     padding: 0;
@@ -73,7 +67,7 @@ ul {
 
 ul li{
     list-style-type: none;
-    padding: 15px 60px;
+    padding: 15px 90px;
     border-radius: 5px;
     background-color: hsl(0, 0%, 20%);
     display: flex;
@@ -115,8 +109,19 @@ a:hover{
     color: hsl(216, 94%, 57%);
 }
 
+
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 1.5em;
+    .container {
+        width: 90%;
+    }
+
+    ul li {
+        padding: 15px 90px;
+        margin: 10px 0;
+        font-size: larger;
+    }
+
+    ul li:nth-child(2) {
+        padding: 10px;
     }
 }
